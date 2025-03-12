@@ -3,7 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import getInputs from "./src/config/getInputModule";
 
 export default defineConfig({
-  root: "src/subapps",
+  root: "src",
   plugins: [vue()],
   build: {
     rollupOptions: {
@@ -12,6 +12,7 @@ export default defineConfig({
     outDir: "../../dist",
   },
   server: {
+    host: "0.0.0.0",
     port: 17481,
   },
 });
