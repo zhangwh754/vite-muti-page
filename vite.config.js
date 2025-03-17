@@ -14,5 +14,6 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 17481,
+    open: "/sharedApps/entry/",
   },
 });

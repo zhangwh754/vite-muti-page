@@ -11,8 +11,6 @@ function getInputs() {
   const mainInput = getMainInput();
   const childInput = getChildInput();
 
-  console.log({ ...mainInput, ...childInput });
-
   return { ...mainInput, ...childInput };
 }
 
